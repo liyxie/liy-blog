@@ -2,58 +2,7 @@
   <div>
     <Loading></Loading>
     <!-- banner -->
-    <div class="home-banner" :style="cover">
-      <div class="bgShade">
-        <div class="banner-container">
-          <!-- 网站名称 -->
-          <h1 class="blog-title animated zoomIn">
-            {{ blogInfo.webSite.name }}
-          </h1>
-          <p></p>
-          <!--     点击更换一言 图标  句子输出完成前，按钮不可点击   -->
-          <button class="el-icon-lollipop" :disabled="typerFlag" style="font-size: 2rem"
-                  @click="changeHitokoto"></button>
-          <p></p>
-          <p></p>
-          <!-- 一言 -->
-          <div class="blog-intro">
-            {{ obj.output }} <span class="typed-cursor">|</span>
-            <!--          {{ blogInfo.webSite.summary }} <span class="typed-cursor">|</span>-->
-          </div>
-          <!-- 联系方式 -->
-          <div class="blog-contact">
-            <a
-              v-if="isShowSocial(2)"
-              class="mr-5 iconfont iconqq"
-              target="_blank"
-              :href="
-              'http://wpa.qq.com/msgrd?v=3&uin=' +
-                blogInfo.webSite.qqNumber +
-                '&site=qq&menu=yes'
-            "
-            />
-            <a
-              v-if="isShowSocial(3)"
-              target="_blank"
-              :href="blogInfo.webSite.github"
-              class="mr-5 iconfont icongithub"
-            />
-            <a
-              v-if="isShowSocial(4)"
-              target="_blank"
-              :href="blogInfo.webSite.gitee"
-              class="iconfont icongitee-fill-round"
-            />
-          </div>
-        </div>
-        <!-- 向下滚动 -->
-        <div class="scroll-down" @click="scrollDown">
-          <v-icon color="#fff" class="scroll-down-effects">
-            mdi-chevron-down
-          </v-icon>
-        </div>
-      </div>
-    </div>
+    
 
     <!-- 主页文章 -->
     <v-row class="home-container">
@@ -376,7 +325,7 @@
     metaInfo: {
       meta: [{
         name: "keyWords",
-        content: "儒林小栈,开源博客,www.codescholar.cn"  //变量或字符串
+        content: "liy-blog,开源博客,  "  //变量或字符串
       }, {
         name: "description",
         content: "一个专注于技术分享的博客平台,大家以共同学习,乐于分享,拥抱开源的价值观进行学习交流"
@@ -470,7 +419,7 @@
       },
       // 初始化
       init() {
-        document.title = "儒林小栈";
+        document.title = "liy-blog";
         if (typeof (WebSocket) === "undefined") {
           console.error("您的浏览器不支持socket");
         } else {
@@ -485,7 +434,7 @@
         }
         this.changeHitokoto();
       },
-      // 一言Api进行打字机循环输出效果  by  程序儒  2023年4月11日
+      // 一言Api进行打字机循环输出效果      2023年4月11日
       initTyped(input, fn, hooks) {
         const obj = this.obj;
         const typed = new EasyTyper(obj, input, () => {
@@ -711,7 +660,7 @@
         margin-top: 2rem;
     }
 
-    /*  调整首图背景不透明度  by 程序儒  2023年4月11日  */
+    /*  调整首图背景不透明度      2023年4月11日  */
     .bgShade {
         background-color: rgba(0, 0, 0, 0.15);
     }

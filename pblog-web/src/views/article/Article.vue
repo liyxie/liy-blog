@@ -324,9 +324,9 @@
         :visible.sync="dialogVisible"
         width="30%"
       >
-        <div style="display :flex;justify-content: center;">
+        <!-- <div style="display :flex;justify-content: center;">
           <font >扫码关注公众号「<span style="color: #005cc5">程序儒青衫</span>」</font><br />
-        </div>
+        </div> -->
         <div style="display :flex;justify-content: center;">
           <font > 回复 「<span style="color: red">验证码</span>」获取验证码</font>
         </div>
@@ -354,7 +354,7 @@ export default {
   metaInfo:{
     meta: [{
       name: 'keyWords',
-      content: "儒林小栈,开源博客,www.codescholar.cn"  //变量或字符串
+      content: "liy-blog,开源博客,  "  //变量或字符串
     }, {
       name: 'description',
       content: "一个专注于技术分享的博客平台,大家以共同学习,乐于分享,拥抱开源的价值观进行学习交流"

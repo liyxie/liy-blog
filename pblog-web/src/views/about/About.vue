@@ -45,7 +45,7 @@
     metaInfo: {
       meta: [{
         name: "keyWords",
-        content: "儒林小栈,开源博客,www.codescholar.cn"  //变量或字符串
+        content: "liy-blog,开源博客,  "  //变量或字符串
       }, {
         name: "description",
         content: "这是我的个人博客、会分享关于编程、写作、思考相关的任何内容，希望可以给来到这儿的人有些帮助..."
@@ -155,7 +155,7 @@
 </script>
 
 <style scoped>
-    /*  调整首图背景不透明度  by 程序儒  2023年4月11日  */
+    /*  调整首图背景不透明度      2023年4月11日  */
     .bgShade {
         background-color: rgba(0, 0, 0, 0.15);
     }
