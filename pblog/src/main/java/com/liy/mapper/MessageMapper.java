@@ -1,6 +1,6 @@
 package com.liy.mapper;
 
-import com.liy.entity.Message;
+import com.liy.domain.entity.Message;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Repository;

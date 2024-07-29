@@ -1,7 +1,7 @@
 package com.liy.util;
 
 import com.alibaba.fastjson.JSON;
-import com.liy.vo.ArticleSearchVO;
+import com.liy.domain.vo.ArticleSearchVO;
 import lombok.RequiredArgsConstructor;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

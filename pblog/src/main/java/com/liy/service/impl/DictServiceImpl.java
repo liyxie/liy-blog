@@ -2,10 +2,10 @@ package com.liy.service.impl;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
-import com.liy.common.ResponseResult;
+import com.liy.domain.ResponseResult;
 import com.liy.common.FieldConstants;
-import com.liy.entity.Dict;
-import com.liy.entity.DictData;
+import com.liy.domain.entity.Dict;
+import com.liy.domain.entity.DictData;
 import com.liy.mapper.DictMapper;
 import com.liy.service.DictDataService;
 import com.liy.service.DictService;

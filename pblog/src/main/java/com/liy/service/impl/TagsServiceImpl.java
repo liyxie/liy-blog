@@ -2,9 +2,9 @@ package com.liy.service.impl;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
-import com.liy.vo.TagVO;
-import com.liy.entity.Tags;
-import com.liy.common.ResponseResult;
+import com.liy.domain.vo.TagVO;
+import com.liy.domain.entity.Tags;
+import com.liy.domain.ResponseResult;
 import com.liy.common.FieldConstants;
 import com.liy.mapper.TagsMapper;
 import com.liy.service.TagsService;

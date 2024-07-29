@@ -2,9 +2,9 @@ package com.liy.service.impl;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
-import com.liy.entity.JobLog;
+import com.liy.domain.entity.JobLog;
 import com.liy.mapper.JobLogMapper;
-import com.liy.common.ResponseResult;
+import com.liy.domain.ResponseResult;
 import com.liy.common.FieldConstants;
 import com.liy.service.JobLogService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;

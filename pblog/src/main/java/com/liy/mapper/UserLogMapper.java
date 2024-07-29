@@ -1,7 +1,7 @@
 package com.liy.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.liy.entity.UserLog;
+import com.liy.domain.entity.UserLog;
 import org.apache.ibatis.annotations.Select;
 import org.springframework.stereotype.Repository;
 

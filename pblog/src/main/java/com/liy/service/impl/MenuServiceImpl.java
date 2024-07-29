@@ -1,9 +1,9 @@
 package com.liy.service.impl;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
-import com.liy.common.ResponseResult;
+import com.liy.domain.ResponseResult;
 import com.liy.common.FieldConstants;
-import com.liy.entity.Menu;
+import com.liy.domain.entity.Menu;
 import com.liy.mapper.MenuMapper;
 import com.liy.service.MenuService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;

@@ -1,6 +1,6 @@
 package com.liy.strategy;
 
-import com.liy.vo.UserInfoVO;
+import com.liy.domain.vo.UserInfoVO;
 
 /**
  * @author CodeScholar

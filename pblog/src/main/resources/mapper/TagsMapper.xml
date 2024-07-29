@@ -13,11 +13,11 @@
         select name from b_tags where id in(select tag_id from b_article_tag where article_id=#{articleId})
     </select>
 
-    <select id="findByArticleIdToTags" resultType="com.liy.vo.TagVO">
+    <select id="findByArticleIdToTags" resultType="com.liy.domain.vo.TagVO">
         select id,name from b_tags where id in (select tag_id from b_article_tag where article_id=#{articleId})
     </select>
 
-    <select id="selectPageRecord" resultType="com.liy.entity.Tags">
+    <select id="selectPageRecord" resultType="com.liy.domain.entity.Tags">
         select a.id,a.name,a.sort,a.click_volume,a.create_time,b.articleCount from b_tags a
             left join (select tag_id,count(id) as articleCount from b_article_tag GROUP BY tag_id) b on a.id=b.tag_id
         <where>
@@ -37,7 +37,7 @@
     <select id="countTags" resultType="java.util.Map">
         select id,name from b_tags
     </select>
-    <select id="selectAll" resultType="com.liy.vo.TagVO">
+    <select id="selectAll" resultType="com.liy.domain.vo.TagVO">
         select id,name from b_tags order by sort desc
     </select>
 

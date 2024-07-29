@@ -21,6 +21,7 @@ import java.net.UnknownHostException;
 public class BlogApplication {
     public static void main(String[] args) throws UnknownHostException {
         ConfigurableApplicationContext application = SpringApplication.run(BlogApplication.class, args);
+
         Environment env = application.getEnvironment();
         String ip = InetAddress.getLocalHost().getHostAddress();
         String port = env.getProperty("server.port");

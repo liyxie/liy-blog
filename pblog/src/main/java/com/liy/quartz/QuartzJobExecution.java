@@ -1,6 +1,6 @@
 package com.liy.quartz;
 
-import com.liy.entity.Job;
+import com.liy.domain.entity.Job;
 import org.quartz.JobExecutionContext;
 
 /**

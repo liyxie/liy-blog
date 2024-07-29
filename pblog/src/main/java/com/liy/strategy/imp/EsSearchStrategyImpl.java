@@ -3,11 +3,11 @@ package com.liy.strategy.imp;
 
 import com.baomidou.mybatisplus.core.toolkit.CollectionUtils;
 import com.baomidou.mybatisplus.core.toolkit.StringUtils;
-import com.liy.vo.ArticleSearchVO;
+import com.liy.domain.vo.ArticleSearchVO;
 import com.liy.common.Constants;
 import com.liy.common.FieldConstants;
 import com.liy.strategy.SearchStrategy;
-import com.liy.vo.QuestionSearchVO;
+import com.liy.domain.vo.QuestionSearchVO;
 import lombok.RequiredArgsConstructor;
 import org.elasticsearch.index.query.*;
 import org.elasticsearch.search.fetch.subphase.highlight.HighlightBuilder;

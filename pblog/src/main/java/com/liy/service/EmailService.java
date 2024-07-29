@@ -1,6 +1,6 @@
 package com.liy.service;
 
-import com.liy.entity.FriendLink;
+import com.liy.domain.entity.FriendLink;
 
 import javax.mail.MessagingException;
 

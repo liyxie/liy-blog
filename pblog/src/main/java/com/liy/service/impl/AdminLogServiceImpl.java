@@ -2,9 +2,9 @@ package com.liy.service.impl;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
-import com.liy.common.ResponseResult;
+import com.liy.domain.ResponseResult;
 import com.liy.common.FieldConstants;
-import com.liy.entity.AdminLog;
+import com.liy.domain.entity.AdminLog;
 import com.liy.mapper.AdminLogMapper;
 import com.liy.service.AdminLogService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;

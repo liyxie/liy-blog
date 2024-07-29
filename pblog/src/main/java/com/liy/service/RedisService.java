@@ -38,12 +38,20 @@ public interface RedisService {
     boolean expire(String key, long timeout, TimeUnit unit);
 
     /**
+     * 判断 key是否存在
+     *
+     * @param key 键
+     * @return true 存在 false不存在
+     */
+    public Boolean hasKey(String key);
+
+    /**
      * 获得缓存的基本对象。
      *
      * @param key 缓存键值
      * @return 缓存键值对应的数据
      */
-    Object getCacheObject(String key);
+    <T> T getCacheObject(final String key);
 
     /**
      * 删除单个对象

@@ -23,7 +23,7 @@ public class Knife4jConfig {
                 .useDefaultResponseMessages(false)
                 .apiInfo(apiInfo())
                 .select()
-                .apis(RequestHandlerSelectors.basePackage("com.rulin.controller"))
+                .apis(RequestHandlerSelectors.basePackage("com.liy.controller"))
                 .paths(PathSelectors.any())
                 .build();
     }

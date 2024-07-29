@@ -1,7 +1,7 @@
 package com.liy.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.liy.entity.Role;
+import com.liy.domain.entity.Role;
 import org.apache.ibatis.annotations.*;
 import org.springframework.stereotype.Repository;
 

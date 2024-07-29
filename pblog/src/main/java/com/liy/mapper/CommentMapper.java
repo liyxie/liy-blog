@@ -1,11 +1,11 @@
 package com.liy.mapper;
 
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
-import com.liy.vo.CommentVO;
-import com.liy.vo.ReplyCountVO;
-import com.liy.vo.ReplyVO;
-import com.liy.vo.SystemCommentVO;
-import com.liy.entity.Comment;
+import com.liy.domain.vo.CommentVO;
+import com.liy.domain.vo.ReplyCountVO;
+import com.liy.domain.vo.ReplyVO;
+import com.liy.domain.vo.SystemCommentVO;
+import com.liy.domain.entity.Comment;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Repository;

@@ -4,7 +4,7 @@ package com.liy.controller.system;
 import cn.dev33.satoken.annotation.SaCheckLogin;
 import cn.dev33.satoken.annotation.SaCheckPermission;
 import com.liy.service.JobLogService;
-import com.liy.common.ResponseResult;
+import com.liy.domain.ResponseResult;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import lombok.RequiredArgsConstructor;

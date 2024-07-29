@@ -1,6 +1,6 @@
 package com.liy.mapper;
 
-import com.liy.entity.Photo;
+import com.liy.domain.entity.Photo;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Repository;

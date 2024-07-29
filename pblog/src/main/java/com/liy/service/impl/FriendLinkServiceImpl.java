@@ -2,11 +2,11 @@ package com.liy.service.impl;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
-import com.liy.common.ResponseResult;
+import com.liy.domain.ResponseResult;
 import com.liy.common.FieldConstants;
 import com.liy.service.EmailService;
-import com.liy.vo.FriendLinkVO;
-import com.liy.entity.FriendLink;
+import com.liy.domain.vo.FriendLinkVO;
+import com.liy.domain.entity.FriendLink;
 import com.liy.mapper.FriendLinkMapper;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.liy.service.FriendLinkService;

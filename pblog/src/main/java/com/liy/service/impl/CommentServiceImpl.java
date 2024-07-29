@@ -7,15 +7,15 @@ import com.baomidou.mybatisplus.core.toolkit.CollectionUtils;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.liy.exception.BusinessException;
-import com.liy.vo.ReplyCountVO;
-import com.liy.vo.ReplyVO;
-import com.liy.common.ResponseResult;
+import com.liy.domain.vo.ReplyCountVO;
+import com.liy.domain.vo.ReplyVO;
+import com.liy.domain.ResponseResult;
 import com.liy.common.FieldConstants;
-import com.liy.vo.SystemCommentVO;
-import com.liy.entity.Comment;
-import com.liy.entity.UserAuth;
+import com.liy.domain.vo.SystemCommentVO;
+import com.liy.domain.entity.Comment;
+import com.liy.domain.entity.UserAuth;
 import com.liy.util.PageUtils;
-import com.liy.dto.CommentDTO;
+import com.liy.domain.dto.CommentDTO;
 import com.liy.mapper.CommentMapper;
 import com.liy.mapper.UserAuthMapper;
 import com.liy.service.CommentService;
@@ -86,14 +86,14 @@ public class CommentServiceImpl extends ServiceImpl<CommentMapper, Comment> impl
         if (CollectionUtils.isEmpty(comments)) {
             return ResponseResult.success();
         }
-        List<com.liy.vo.CommentVO> commentVOList = new ArrayList<>();
+        List<com.liy.domain.vo.CommentVO> commentVOList = new ArrayList<>();
         List<ReplyVO> replyVOList;
         for (Comment comment : comments) {
             UserAuth userAuth = userAuthMapper.getByUserId(comment.getUserId());
             // 根据评论id集合查询回复数据
             replyVOList = baseMapper.listReplies(comment.getId());
             ReplyCountVO replyCountVO = baseMapper.listReplyCountByCommentId(comment.getId());
-            com.liy.vo.CommentVO dto = new com.liy.vo.CommentVO();
+            com.liy.domain.vo.CommentVO dto = new com.liy.domain.vo.CommentVO();
             dto.setId(comment.getId());
             dto.setUserId(comment.getUserId());
             dto.setCommentContent(comment.getContent());

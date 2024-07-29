@@ -2,7 +2,7 @@ package com.liy.controller.api;
 
 
 import com.liy.annotation.BusinessLogger;
-import com.liy.common.ResponseResult;
+import com.liy.domain.ResponseResult;
 import com.liy.service.CategoryService;
 import com.liy.service.TagsService;
 import io.swagger.annotations.Api;

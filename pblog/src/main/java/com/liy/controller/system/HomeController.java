@@ -3,9 +3,9 @@ package com.liy.controller.system;
 
 import cn.dev33.satoken.annotation.SaCheckLogin;
 import cn.dev33.satoken.annotation.SaCheckPermission;
-import com.liy.common.ResponseResult;
+import com.liy.domain.ResponseResult;
 import com.liy.service.impl.HomeServiceImpl;
-import com.liy.vo.SystemHardwareInfoVO;
+import com.liy.domain.vo.SystemHardwareInfoVO;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import lombok.RequiredArgsConstructor;

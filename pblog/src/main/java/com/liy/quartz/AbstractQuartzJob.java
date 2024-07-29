@@ -1,7 +1,7 @@
 package com.liy.quartz;
 
-import com.liy.entity.Job;
-import com.liy.entity.JobLog;
+import com.liy.domain.entity.Job;
+import com.liy.domain.entity.JobLog;
 import com.liy.enums.ScheduleConstants;
 import com.liy.mapper.JobLogMapper;
 import com.liy.util.SpringUtils;

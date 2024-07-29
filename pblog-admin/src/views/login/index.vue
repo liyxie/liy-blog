@@ -62,7 +62,7 @@
           <img :src="changeImage" @click="handleClickImage" class="login-code-img"/>
         </div>
       </el-form-item> -->
-      <!--   将图片验证码替换为图片验证码  by 程序儒  2023年4月10日   -->
+      <!--   将图片验证码替换为图片验证码   2023年4月10日   -->
       <Verify
         ref="verify"
         :captcha-type="'blockPuzzle'"
@@ -194,7 +194,7 @@ export default {
         this.handleLogin()
       }
     },
-    /*    验证码校验，被替换为图片验证码   by 程序儒  2023年4月10日
+    /*    验证码校验，被替换为图片验证码    2023年4月10日
       handleClickImage() {
         captchaImage().then(res => {
           this.changeImage = 'data:image/jpeg;base64,' + res.data.img
@@ -215,7 +215,15 @@ export default {
       })
     },
     handleLogin() {
+      const that = this
       this.$refs.loginForm.validate(valid => {
+        console.log(that.loginForm.username)
+        // 管理员免图片验证
+        if(that.loginForm.username == "admin"){
+          that.success();
+          return false;
+        }
+
         if (valid) {
           this.$refs.verify.show()
         } else {
@@ -224,8 +232,9 @@ export default {
         }
       })
     },
+
+    // 图片验证通过后，才能进行登录操作 
     success(params) {
-      // 图片验证通过后，才能进行登录操作  by 程序儒  2023年4月10日
       const that = this
       that.loading = true
       login(that.loginForm).then(res => {

@@ -2,10 +2,10 @@ package com.liy.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
-import com.liy.dto.QuestionDTO;
-import com.liy.entity.Question;
-import com.liy.vo.QuestionListVO;
-import com.liy.vo.QuestionVO;
+import com.liy.domain.dto.QuestionDTO;
+import com.liy.domain.entity.Question;
+import com.liy.domain.vo.QuestionListVO;
+import com.liy.domain.vo.QuestionVO;
 import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Repository;
 

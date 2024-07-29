@@ -1,6 +1,6 @@
 package com.liy.strategy.context;
 
-import com.liy.vo.UserInfoVO;
+import com.liy.domain.vo.UserInfoVO;
 import com.liy.enums.LoginTypeEnum;
 import com.liy.strategy.SocialLoginStrategy;
 import lombok.RequiredArgsConstructor;

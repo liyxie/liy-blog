@@ -2,7 +2,7 @@ package com.liy.exception;
 
 import cn.dev33.satoken.exception.NotLoginException;
 import cn.dev33.satoken.exception.NotPermissionException;
-import com.liy.common.ResponseResult;
+import com.liy.domain.ResponseResult;
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -17,7 +17,7 @@ import static com.liy.common.ResultCode.*;
  * @date 2023年4月9日
  * @apiNote
  */
-@ControllerAdvice(basePackages = "com.rulin")
+@ControllerAdvice(basePackages = "com.liy")
 public class GlobalException {
 
     private static final Logger logger = LoggerFactory.getLogger(GlobalException.class);

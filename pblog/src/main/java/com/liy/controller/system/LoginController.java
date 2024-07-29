@@ -2,9 +2,9 @@ package com.liy.controller.system;
 
 import cn.dev33.satoken.annotation.SaCheckLogin;
 import cn.dev33.satoken.stp.StpUtil;
-import com.liy.common.ResponseResult;
+import com.liy.domain.ResponseResult;
 import com.liy.service.LoginService;
-import com.liy.dto.LoginDTO;
+import com.liy.domain.dto.LoginDTO;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import lombok.RequiredArgsConstructor;

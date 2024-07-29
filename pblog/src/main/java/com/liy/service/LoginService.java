@@ -1,8 +1,8 @@
 package com.liy.service;
 
 
-import com.liy.common.ResponseResult;
-import com.liy.dto.LoginDTO;
+import com.liy.domain.ResponseResult;
+import com.liy.domain.dto.LoginDTO;
 
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;

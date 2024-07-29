@@ -1,8 +1,8 @@
 package com.liy.mapper;
 
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
-import com.liy.vo.TagVO;
-import com.liy.entity.Tags;
+import com.liy.domain.vo.TagVO;
+import com.liy.domain.entity.Tags;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import org.apache.ibatis.annotations.MapKey;
 import org.apache.ibatis.annotations.Param;

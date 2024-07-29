@@ -1,6 +1,6 @@
 package com.liy.quartz;
 
-import com.liy.entity.Job;
+import com.liy.domain.entity.Job;
 import com.liy.util.SpringUtils;
 import org.apache.commons.lang3.StringUtils;
 

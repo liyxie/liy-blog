@@ -1,8 +1,8 @@
 package com.liy.service.impl;
 
 import com.liy.common.RedisConstants;
-import com.liy.entity.FriendLink;
-import com.liy.entity.SystemConfig;
+import com.liy.domain.entity.FriendLink;
+import com.liy.domain.entity.SystemConfig;
 import com.liy.service.EmailService;
 import com.liy.service.RedisService;
 import com.liy.service.SystemConfigService;
@@ -98,7 +98,7 @@ public class EmailServiceImpl implements EmailService {
     public void friendPassSendEmail(String email){
         String content = "<html>\n" +
                 "<body>\n" +
-                "    <p>您在"+"<a href='http://www.codescholar.cn'>儒林小栈</a>"+"站点申请友链加入审核通过!!</span>\n" +
+                "    <p>您在"+"<a href='http://www.codescholar.cn'>liyBlog</a>"+"站点申请友链加入审核通过!!</span>\n" +
                 "<p style='padding: 20px;'>感谢您的选择，本站将会竭尽维护好站点稳定，分享高质量的文章，欢迎相互交流互访。</p>" +
                 "<p>可前往<a href='http://www.codescholar.cn/links'>本站友链</a>查阅您的站点。</p></body>\n" +
                 "</html>";
@@ -118,7 +118,7 @@ public class EmailServiceImpl implements EmailService {
     public void friendFailedSendEmail(String email,String reason){
         String content = "<html>\n" +
                 "<body>\n" +
-                "    <p>您在"+"<a href='http://www.codescholar.cn'>儒林小栈</a>"+"站点申请的友链加入审核未通过!具体原因为:"+ reason +"</span>\n" +
+                "    <p>您在"+"<a href='http://www.codescholar.cn'>liy</a>"+"站点申请的友链加入审核未通过!具体原因为:"+ reason +"</span>\n" +
                 "<p style='padding: 20px;'>感谢您的选择，本站将会竭尽维护好站点稳定，分享高质量的文章，欢迎相互交流互访。</p>" +
                 "<p>可前往<a href='http://www.codescholar.cn/links'>本站友链</a>查阅您的站点。</p></body>\n" +
                 "</html>";
@@ -148,14 +148,14 @@ public class EmailServiceImpl implements EmailService {
                 "            <tr style=\"background-color: #f8f8f8;\">\n" +
                 "              <td>\n" +
                 "                <img style=\"padding: 15px 0 15px 30px;width:50px\" src=\"http://img.codescholar.cn/9a0a3a57c52d409f8a1f9fe5b27077d2.jpg\">" +
-                "                <span>儒林小栈. </span>\n" +
+                "                <span>liyBlog. </span>\n" +
                 "              </td>\n" +
                 "            </tr>\n" +
                 "            <tr>\n" +
                 "              <td class=\"p-intro\">\n" +
                 "                <h1 style=\"font-size: 26px; font-weight: bold;\">验证您的邮箱地址</h1>\n" +
-                "                <p style=\"line-height:1.75em;\">感谢您使用 儒林小栈. </p>\n" +
-                "                <p style=\"line-height:1.75em;\">以下是您的邮箱验证码，请将它输入到 儒林小栈 的邮箱验证码输入框中:</p>\n" +
+                "                <p style=\"line-height:1.75em;\">感谢您使用 liyBlog. </p>\n" +
+                "                <p style=\"line-height:1.75em;\">以下是您的邮箱验证码，请将它输入到 liyBlog 的邮箱验证码输入框中:</p>\n" +
                 "              </td>\n" +
                 "            </tr>\n" +
                 "            <tr>\n" +
@@ -165,13 +165,13 @@ public class EmailServiceImpl implements EmailService {
                 "            </tr>\n" +
                 "            <tr>\n" +
                 "              <td class=\"p-intro\">\n" +
-                "                <p style=\"line-height:1.75em;\">这一封邮件包括一些您的私密的 儒林小栈 账号信息，请不要回复或转发它，以免带来不必要的信息泄露风险。 </p>\n" +
+                "                <p style=\"line-height:1.75em;\">这一封邮件包括一些您的私密的 liyBlog 账号信息，请不要回复或转发它，以免带来不必要的信息泄露风险。 </p>\n" +
                 "              </td>\n" +
                 "            </tr>\n" +
                 "            <tr>\n" +
                 "              <td class=\"p-intro\">\n" +
                 "                <hr>\n" +
-                "                <p style=\"text-align: center;line-height:1.75em;\">程序儒 - 儒林小栈</p>\n" +
+                "                <p style=\"text-align: center;line-height:1.75em;\">程序儒 - liyBlog</p>\n" +
                 "              </td>\n" +
                 "            </tr>\n" +
                 "          </tbody>\n" +
@@ -201,7 +201,7 @@ public class EmailServiceImpl implements EmailService {
         MimeMessage mimeMessage = javaMailSender.createMimeMessage();
         MimeMessageHelper mineHelper = new MimeMessageHelper(mimeMessage, true);
         // 设置邮件主题
-        mineHelper.setSubject("儒林小栈");
+        mineHelper.setSubject("liyBlog");
         // 设置邮件发送者
         mineHelper.setFrom(Objects.requireNonNull(javaMailSender.getUsername()));
         // 设置邮件接收者，可以有多个接收者，中间用逗号隔开

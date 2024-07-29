@@ -1,7 +1,7 @@
 package com.liy.service;
 
-import com.liy.entity.JobLog;
-import com.liy.common.ResponseResult;
+import com.liy.domain.entity.JobLog;
+import com.liy.domain.ResponseResult;
 import com.baomidou.mybatisplus.extension.service.IService;
 
 import java.util.List;

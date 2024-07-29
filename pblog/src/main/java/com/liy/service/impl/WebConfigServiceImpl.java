@@ -1,8 +1,8 @@
 package com.liy.service.impl;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
-import com.liy.common.ResponseResult;
-import com.liy.entity.WebConfig;
+import com.liy.domain.ResponseResult;
+import com.liy.domain.entity.WebConfig;
 import com.liy.mapper.WebConfigMapper;
 import com.liy.service.WebConfigService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;

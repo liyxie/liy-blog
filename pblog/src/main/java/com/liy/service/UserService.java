@@ -1,8 +1,8 @@
 package com.liy.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
-import com.liy.common.ResponseResult;
-import com.liy.entity.User;
+import com.liy.domain.ResponseResult;
+import com.liy.domain.entity.User;
 
 import java.util.List;
 import java.util.Map;

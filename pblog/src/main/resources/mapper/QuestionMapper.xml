@@ -2,7 +2,7 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.liy.mapper.QuestionMapper">
 
-    <select id="selectQuestion" resultType="com.liy.vo.QuestionListVO">
+    <select id="selectQuestion" resultType="com.liy.domain.vo.QuestionListVO">
         SELECT
             a.*,
             b.NAME AS qCategoryName
@@ -25,7 +25,7 @@
         GROUP BY a.id order by a.sort ASC ,a.create_time ASC
     </select>
 
-    <select id="selectPrimaryKey" resultType="com.liy.dto.QuestionDTO">
+    <select id="selectPrimaryKey" resultType="com.liy.domain.dto.QuestionDTO">
         SELECT a.id,
                a.user_id,
                a.qu_content,
@@ -55,7 +55,7 @@
         WHERE id = #{questionId}
     </update>
 
-    <select id="selectPreviewQuestion" resultType="com.liy.vo.QuestionVO">
+    <select id="selectPreviewQuestion" resultType="com.liy.domain.vo.QuestionVO">
         SELECT
             id,
             qu_content,
@@ -67,7 +67,7 @@
             is_publish = 1 and q_category_id = #{cid}
     </select>
 
-    <select id="selectFavoriteQuestions" resultType="com.liy.vo.QuestionVO">
+    <select id="selectFavoriteQuestions" resultType="com.liy.domain.vo.QuestionVO">
         SELECT
             id,
             qu_content,

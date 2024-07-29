@@ -19,7 +19,7 @@ import java.util.*;
  */
 public class WeChatUtils {
 
-    private static String token = "rulin2023";
+    private static String token = "liy2023";
 
     private static final Logger LOGGER = LoggerFactory.getLogger(WeChatUtils.class);
 

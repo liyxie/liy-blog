@@ -2,9 +2,9 @@ package com.liy.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
-import com.liy.vo.SystemUserVO;
-import com.liy.vo.UserVO;
-import com.liy.entity.User;
+import com.liy.domain.vo.SystemUserVO;
+import com.liy.domain.vo.UserVO;
+import com.liy.domain.entity.User;
 import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Repository;
 

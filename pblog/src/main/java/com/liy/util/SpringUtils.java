@@ -1,5 +1,6 @@
 package com.liy.util;
 
+import lombok.Getter;
 import org.springframework.aop.framework.AopContext;
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.NoSuchBeanDefinitionException;
@@ -14,7 +15,13 @@ import org.springframework.stereotype.Component;
  */
 @Component
 public class SpringUtils implements ApplicationContextAware {
-    /** Spring应用上下文环境 */
+    /** Spring应用上下文环境
+     * -- GETTER --
+     *  获取applicationContext
+     *
+     * @return applicationContext
+     */
+    @Getter
     private static ApplicationContext applicationContext;
 
 
@@ -22,16 +29,6 @@ public class SpringUtils implements ApplicationContextAware {
     public void setApplicationContext(ApplicationContext applicationContext) throws BeansException
     {
         SpringUtils.applicationContext = applicationContext;
-    }
-
-
-    /**
-     * 获取applicationContext
-     *
-     * @return applicationContext
-     */
-    public static ApplicationContext getApplicationContext() {
-        return applicationContext;
     }
 
 

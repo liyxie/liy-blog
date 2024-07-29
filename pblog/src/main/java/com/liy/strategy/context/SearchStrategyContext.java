@@ -1,8 +1,8 @@
 package com.liy.strategy.context;
 
-import com.liy.vo.ArticleSearchVO;
+import com.liy.domain.vo.ArticleSearchVO;
 import com.liy.strategy.SearchStrategy;
-import com.liy.vo.QuestionSearchVO;
+import com.liy.domain.vo.QuestionSearchVO;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

@@ -1,6 +1,6 @@
 package com.liy.mapper;
 
-import com.liy.entity.WebConfig;
+import com.liy.domain.entity.WebConfig;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 
 /**

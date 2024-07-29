@@ -1,9 +1,16 @@
 package com.liy.service;
 
-import com.liy.common.ResponseResult;
+import com.liy.domain.ResponseResult;
+import com.liy.domain.entity.SystemFileConfig;
 import org.springframework.web.multipart.MultipartFile;
 
 public interface CloudOssService {
+
+    /**
+     * 更新文件存储策略
+     */
+    void updateFileUploadWay(SystemFileConfig systemFileConfig);
+
     /**
      * 上传
      * @param file 文件

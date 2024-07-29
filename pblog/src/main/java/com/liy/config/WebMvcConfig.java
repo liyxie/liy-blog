@@ -20,8 +20,8 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 @EnableWebMvc
 public class WebMvcConfig implements WebMvcConfigurer  {
 
-    @Value("${file.upload-folder}")
-    private String UPLOAD_FOLDER;
+//    @Value("${file.upload-folder}")
+//    private String UPLOAD_FOLDER;
 
     /**
      * 这里需要先将限流拦截器入住，不然无法获取到拦截器中的redistemplate
@@ -52,6 +52,7 @@ public class WebMvcConfig implements WebMvcConfigurer  {
             registry.addResourceHandler("/webjars/**").addResourceLocations(
                     "classpath:/META-INF/resources/webjars/");
         registry.addResourceHandler("doc.html").addResourceLocations("classpath:/META-INF/resources/");
-        registry.addResourceHandler("/img/**").addResourceLocations("file:" + UPLOAD_FOLDER);
+        registry.addResourceHandler("/img/**");
+//                .addResourceLocations("file:" + UPLOAD_FOLDER);
     }
 }

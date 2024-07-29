@@ -24,7 +24,7 @@ export default {
   },
   data() {
     return {
-      title: '儒林小栈管理系统',
+      title: 'liy小栈管理系统',
       logo: process.env.VUE_APP_IMG_API + 'webconfig/' + 'site-log.png'
     }
   }

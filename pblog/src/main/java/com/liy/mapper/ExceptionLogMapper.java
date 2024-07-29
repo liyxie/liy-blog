@@ -1,6 +1,6 @@
 package com.liy.mapper;
 
-import com.liy.entity.ExceptionLog;
+import com.liy.domain.entity.ExceptionLog;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import org.springframework.stereotype.Repository;
 

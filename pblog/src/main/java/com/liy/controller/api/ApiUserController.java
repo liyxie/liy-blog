@@ -2,12 +2,12 @@ package com.liy.controller.api;
 
 import cn.dev33.satoken.annotation.SaCheckLogin;
 import com.liy.annotation.BusinessLogger;
-import com.liy.common.ResponseResult;
+import com.liy.domain.ResponseResult;
 import com.liy.service.UserAuthService;
-import com.liy.dto.EmailLoginDTO;
-import com.liy.dto.EmailRegisterDTO;
-import com.liy.dto.QQLoginDTO;
-import com.liy.dto.UserAuthDTO;
+import com.liy.domain.dto.EmailLoginDTO;
+import com.liy.domain.dto.EmailRegisterDTO;
+import com.liy.domain.dto.QQLoginDTO;
+import com.liy.domain.dto.UserAuthDTO;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import lombok.RequiredArgsConstructor;

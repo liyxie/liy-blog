@@ -1,8 +1,8 @@
 package com.liy.aspect;
 
 import com.liy.annotation.BusinessLogger;
-import com.liy.common.ResponseResult;
-import com.liy.entity.UserLog;
+import com.liy.domain.ResponseResult;
+import com.liy.domain.entity.UserLog;
 import com.liy.mapper.UserLogMapper;
 import com.liy.util.DateUtils;
 import com.liy.util.IpUtils;

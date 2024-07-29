@@ -2,8 +2,8 @@ package com.liy.controller.api;
 
 
 import com.liy.annotation.BusinessLogger;
-import com.liy.common.ResponseResult;
-import com.liy.entity.Message;
+import com.liy.domain.ResponseResult;
+import com.liy.domain.entity.Message;
 import com.liy.service.MessageService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;

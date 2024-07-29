@@ -1,7 +1,7 @@
 package com.liy.service;
 
-import com.liy.entity.Job;
-import com.liy.common.ResponseResult;
+import com.liy.domain.entity.Job;
+import com.liy.domain.ResponseResult;
 import com.baomidou.mybatisplus.extension.service.IService;
 import com.liy.enums.TaskException;
 import org.quartz.SchedulerException;

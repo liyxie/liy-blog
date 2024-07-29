@@ -3,14 +3,14 @@ package com.liy.strategy.imp;
 
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.liy.common.Constants;
-import com.liy.entity.BlogArticle;
-import com.liy.entity.Question;
+import com.liy.domain.entity.BlogArticle;
+import com.liy.domain.entity.Question;
 import com.liy.mapper.ArticleMapper;
 import com.liy.mapper.QuestionMapper;
 import com.liy.strategy.SearchStrategy;
 import com.liy.util.StringUtils;
-import com.liy.vo.ArticleSearchVO;
-import com.liy.vo.QuestionSearchVO;
+import com.liy.domain.vo.ArticleSearchVO;
+import com.liy.domain.vo.QuestionSearchVO;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

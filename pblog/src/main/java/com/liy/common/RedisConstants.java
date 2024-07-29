@@ -8,6 +8,16 @@ package com.liy.common;
 public class RedisConstants {
 
     /**
+     * 系统配置
+     */
+    public static final String System_Config_Key = "system_config:";
+
+    /**
+     * 文件存储配置
+     */
+    public static final String System_Config_File_key = "system_config_file:";
+
+    /**
      * 验证码
      */
     public static String CAPTCHA_CODE = "CAPTCHA_CODE:";

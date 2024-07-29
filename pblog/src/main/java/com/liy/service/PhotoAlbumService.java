@@ -1,7 +1,7 @@
 package com.liy.service;
 
-import com.liy.common.ResponseResult;
-import com.liy.entity.PhotoAlbum;
+import com.liy.domain.ResponseResult;
+import com.liy.domain.entity.PhotoAlbum;
 import com.baomidou.mybatisplus.extension.service.IService;
 
 /**

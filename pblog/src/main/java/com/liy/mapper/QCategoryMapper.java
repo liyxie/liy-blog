@@ -2,9 +2,9 @@ package com.liy.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
-import com.liy.entity.QCategory;
-import com.liy.vo.QCategoryCountVO;
-import com.liy.vo.QCategoryVO;
+import com.liy.domain.entity.QCategory;
+import com.liy.domain.vo.QCategoryCountVO;
+import com.liy.domain.vo.QCategoryVO;
 import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Repository;
 

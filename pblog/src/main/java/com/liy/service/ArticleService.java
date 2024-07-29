@@ -1,9 +1,9 @@
 package com.liy.service;
 
-import com.liy.common.ResponseResult;
-import com.liy.entity.BlogArticle;
+import com.liy.domain.ResponseResult;
+import com.liy.domain.entity.BlogArticle;
 import com.baomidou.mybatisplus.extension.service.IService;
-import com.liy.dto.ArticleDTO;
+import com.liy.domain.dto.ArticleDTO;
 
 import java.util.List;
 import java.util.Map;

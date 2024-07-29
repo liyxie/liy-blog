@@ -1,7 +1,7 @@
 package com.liy.controller.api;
 
 
-import com.liy.common.ResponseResult;
+import com.liy.domain.ResponseResult;
 import com.liy.service.impl.HomeServiceImpl;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;

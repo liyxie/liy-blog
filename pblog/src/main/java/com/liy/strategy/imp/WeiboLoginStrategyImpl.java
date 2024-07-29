@@ -1,10 +1,10 @@
 package com.liy.strategy.imp;
 
 import com.liy.config.properties.WeiboConfigProperties;
-import com.liy.vo.SocialTokenVO;
-import com.liy.vo.SocialUserInfoVO;
-import com.liy.vo.WeiboTokenVO;
-import com.liy.vo.WeiboUserInfoVO;
+import com.liy.domain.vo.SocialTokenVO;
+import com.liy.domain.vo.SocialUserInfoVO;
+import com.liy.domain.vo.WeiboTokenVO;
+import com.liy.domain.vo.WeiboUserInfoVO;
 import com.liy.common.ResultCode;
 import com.liy.common.SocialLoginConst;
 import com.liy.enums.LoginTypeEnum;

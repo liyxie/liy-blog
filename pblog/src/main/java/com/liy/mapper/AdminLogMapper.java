@@ -1,7 +1,7 @@
 package com.liy.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.liy.entity.AdminLog;
+import com.liy.domain.entity.AdminLog;
 import org.springframework.stereotype.Repository;
 
 /**

@@ -1,6 +1,6 @@
 package com.liy.mapper;
 
-import com.liy.entity.PhotoAlbum;
+import com.liy.domain.entity.PhotoAlbum;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 
 /**

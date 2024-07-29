@@ -1,6 +1,6 @@
 package com.liy.mapper;
 
-import com.liy.entity.Dict;
+import com.liy.domain.entity.Dict;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 
 /**

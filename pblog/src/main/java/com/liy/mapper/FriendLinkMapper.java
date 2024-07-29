@@ -1,7 +1,7 @@
 package com.liy.mapper;
 
-import com.liy.vo.FriendLinkVO;
-import com.liy.entity.FriendLink;
+import com.liy.domain.vo.FriendLinkVO;
+import com.liy.domain.entity.FriendLink;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Repository;

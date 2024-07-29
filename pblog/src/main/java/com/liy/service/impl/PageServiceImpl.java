@@ -1,7 +1,7 @@
 package com.liy.service.impl;
 
-import com.liy.common.ResponseResult;
-import com.liy.entity.Page;
+import com.liy.domain.ResponseResult;
+import com.liy.domain.entity.Page;
 import com.liy.mapper.PageMapper;
 import com.liy.service.PageService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;

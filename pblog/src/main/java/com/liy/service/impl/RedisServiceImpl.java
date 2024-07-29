@@ -61,7 +61,18 @@ public class RedisServiceImpl implements RedisService {
     @Override
     public boolean expire(final String key, final long timeout, final TimeUnit unit)
     {
-        return redisTemplate.expire(key, timeout, unit);
+        return Boolean.TRUE.equals(redisTemplate.expire(key, timeout, unit));
+    }
+
+    /**
+     * 判断 key是否存在
+     *
+     * @param key 键
+     * @return true 存在 false不存在
+     */
+    public Boolean hasKey(String key)
+    {
+        return redisTemplate.hasKey(key);
     }
 
     /**
@@ -71,9 +82,9 @@ public class RedisServiceImpl implements RedisService {
      * @return 缓存键值对应的数据
      */
     @Override
-    public Object getCacheObject(final String key)
+    public <T> T getCacheObject(final String key)
     {
-        ValueOperations<String, Object> operation = redisTemplate.opsForValue();
+        ValueOperations<String, T> operation = redisTemplate.opsForValue();
         return operation.get(key);
     }
 

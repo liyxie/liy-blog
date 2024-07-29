@@ -1,12 +1,12 @@
 package com.liy.service;
 
-import com.liy.common.ResponseResult;
-import com.liy.entity.UserAuth;
+import com.liy.domain.ResponseResult;
+import com.liy.domain.entity.UserAuth;
 import com.baomidou.mybatisplus.extension.service.IService;
-import com.liy.dto.EmailLoginDTO;
-import com.liy.dto.EmailRegisterDTO;
-import com.liy.dto.QQLoginDTO;
-import com.liy.dto.UserAuthDTO;
+import com.liy.domain.dto.EmailLoginDTO;
+import com.liy.domain.dto.EmailRegisterDTO;
+import com.liy.domain.dto.QQLoginDTO;
+import com.liy.domain.dto.UserAuthDTO;
 
 /**
  * <p>

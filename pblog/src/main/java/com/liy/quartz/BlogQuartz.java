@@ -1,8 +1,8 @@
 package com.liy.quartz;
 
 import com.baomidou.mybatisplus.core.toolkit.StringUtils;
-import com.liy.entity.BlogArticle;
-import com.liy.entity.Tags;
+import com.liy.domain.entity.BlogArticle;
+import com.liy.domain.entity.Tags;
 import com.liy.service.ArticleService;
 import com.liy.common.RedisConstants;
 import com.liy.service.CloudOssService;

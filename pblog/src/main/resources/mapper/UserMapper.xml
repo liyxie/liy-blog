@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.liy.mapper.UserMapper">
+
+
     <insert id="insertBackId" keyProperty="id" useGeneratedKeys="true">
         insert into b_user(username,password,nick_name,avatar,pwd,created_time) values(#{username},#{password},#{nickName}
         ,#{avatar},#{pwd},#{createdTime})
@@ -11,7 +13,7 @@
            (select role_id from b_user_role where user_id=(select id from b_user where id=#{userId}))
     </select>
 
-    <select id="selectPageRecord" resultType="com.liy.vo.UserVO">
+    <select id="selectPageRecord" resultType="com.liy.domain.vo.UserVO">
         select a.id,b.avatar,b.nickname,a.login_type,a.role_id,a.ip_address,a.ip_source,a.last_login_time,a.create_time,a.status from b_user a left join (select id,avatar,nickname from b_user_auth) b on a.user_auth_id=b.id
         <where>
             <if test="username != null and username != ''">
@@ -24,12 +26,12 @@
         order by a.create_time asc
     </select>
 
-    <select id="getById" resultType="com.liy.vo.SystemUserVO">
+    <select id="getById" resultType="com.liy.domain.vo.SystemUserVO">
         select a.id,a.username,a.role_id,a.status,b.nickname,b.avatar from b_user a left join (select id,nickname,avatar from b_user_auth) b on a.user_auth_id=b.id
         where a.id = #{id}
     </select>
 
-    <select id="selectNameAndPassword" resultType="com.liy.entity.User">
+    <select id="selectNameAndPassword" resultType="com.liy.domain.entity.User">
         select a.id,a.username,a.role_id,a.status,b.nickname,b.avatar from b_user a left join (select id,nickname,avatar from b_user_auth) b on a.user_auth_id=b.id
         where username=#{username} and password=#{password}
     </select>

@@ -4,7 +4,7 @@ import cn.dev33.satoken.SaManager;
 import cn.dev33.satoken.listener.SaTokenListener;
 import cn.dev33.satoken.stp.SaLoginModel;
 import cn.dev33.satoken.stp.StpUtil;
-import com.liy.entity.UserAuth;
+import com.liy.domain.entity.UserAuth;
 import com.liy.mapper.UserAuthMapper;
 import com.liy.mapper.UserMapper;
 import com.liy.util.DateUtils;

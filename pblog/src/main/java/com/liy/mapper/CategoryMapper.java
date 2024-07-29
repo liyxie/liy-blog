@@ -1,10 +1,10 @@
 package com.liy.mapper;
 
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
-import com.liy.vo.CategoryBookVO;
-import com.liy.vo.CategoryCountVO;
-import com.liy.vo.CategoryVO;
-import com.liy.entity.Category;
+import com.liy.domain.vo.CategoryBookVO;
+import com.liy.domain.vo.CategoryCountVO;
+import com.liy.domain.vo.CategoryVO;
+import com.liy.domain.entity.Category;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Repository;

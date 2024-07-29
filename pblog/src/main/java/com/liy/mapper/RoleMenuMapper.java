@@ -1,7 +1,7 @@
 package com.liy.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.liy.entity.RoleMenu;
+import com.liy.domain.entity.RoleMenu;
 import org.springframework.stereotype.Repository;
 
 /**

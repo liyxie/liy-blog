@@ -11,7 +11,7 @@
         </foreach>)
     </delete>
 
-    <select id="getByUserId" resultType="com.liy.entity.UserAuth">
+    <select id="getByUserId" resultType="com.liy.domain.entity.UserAuth">
         select * from b_user_auth where id=(select user_auth_id from b_user where id=#{loginId})
     </select>
 

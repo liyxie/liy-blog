@@ -1,13 +1,16 @@
 package com.liy.service.impl;
 
 
-import com.liy.common.ResponseResult;
+import cn.hutool.core.util.ObjectUtil;
+import com.liy.common.FileConstants;
+import com.liy.domain.ResponseResult;
 
-import com.liy.enums.FileUploadModelEnum;
+import com.liy.domain.entity.SystemFileConfig;
 import com.liy.service.CloudOssService;
 import com.liy.service.SystemConfigService;
 import com.liy.strategy.context.FileUploadStrategyContext;
 import lombok.RequiredArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
@@ -17,11 +20,9 @@ import java.util.Objects;
 @RequiredArgsConstructor
 public class CloudOssServiceImpl implements CloudOssService {
 
-    private final SystemConfigService systemConfigService;
-
     private final FileUploadStrategyContext fileUploadStrategyContext;
 
-    private String strategy;
+    private SystemFileConfig strategy;
 
     /**
      * 上传文件
@@ -39,8 +40,7 @@ public class CloudOssServiceImpl implements CloudOssService {
         if (!"jpg,jpeg,gif,png".toUpperCase().contains(suffix.toUpperCase())) {
             return ResponseResult.error("请选择jpg,jpeg,gif,png格式的图片");
         }
-        getFileUploadWay();
-        String key = fileUploadStrategyContext.executeFileUploadStrategy(strategy, file, suffix);
+        String key = fileUploadStrategyContext.executeFileUploadStrategy(strategy, FileConstants.System_Photo, file);
         return ResponseResult.success(key);
     }
 
@@ -53,7 +53,6 @@ public class CloudOssServiceImpl implements CloudOssService {
      */
     @Override
     public ResponseResult delBatchFile(String... key) {
-        getFileUploadWay();
         Boolean isSuccess = fileUploadStrategyContext.executeDeleteFileStrategy(strategy, key);
         if (!isSuccess) {
             return ResponseResult.error("删除文件失败");
@@ -61,7 +60,9 @@ public class CloudOssServiceImpl implements CloudOssService {
         return ResponseResult.success();
     }
 
-    private void getFileUploadWay() {
-        strategy = FileUploadModelEnum.getStrategy(systemConfigService.getCustomizeOne().getFileUploadWay());
+    @Override
+    public void updateFileUploadWay(SystemFileConfig systemFileConfig) {
+        strategy = systemFileConfig;
     }
+
 }

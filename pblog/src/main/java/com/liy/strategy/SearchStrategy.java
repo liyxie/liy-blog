@@ -1,7 +1,7 @@
 package com.liy.strategy;
 
-import com.liy.vo.ArticleSearchVO;
-import com.liy.vo.QuestionSearchVO;
+import com.liy.domain.vo.ArticleSearchVO;
+import com.liy.domain.vo.QuestionSearchVO;
 
 import java.util.List;
 
