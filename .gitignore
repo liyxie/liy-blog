@@ -27,3 +27,7 @@ hs_err_pid*
 target
 .fastRequest
 logs
+
+# npm 
+/pblog-admin/node_modules/*
+/pblog-web/node_modules/*
